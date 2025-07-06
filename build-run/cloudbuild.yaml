@@ -9,7 +9,7 @@ steps:
   
 # Deploy to Cloud Run
 - name: 'gcr.io/cloud-builders/gcloud'
-  args: ['run', 'deploy', 'phython-new-app',
+  args: ['run', 'deploy', 'phython-new-app-docker',
          '--image', 'us-central1-docker.pkg.dev/boutique-dev-457514/docker-repo/phython-new-app:D1',
          '--region', 'us-central1',
          '--platform', 'managed',
